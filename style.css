@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html,
+body{
+    background-image: url('./img/bg_body.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: auto;
+    height: auto;
+    min-height: 200px;
+    min-width: 300px;
+
+    border-radius: 20px;
+    background-color: rgba(223, 195, 186, 0.3);
+    box-shadow:  16px 16px 18px #acacac,
+                 -16px -16px 18px #ffffff;
+
+    overflow: hidden;
+}
+
+.container h1 {
+    margin: 15px 10px;
+    color: #5b6009;
+}
+
+.inputTaskfield{
+    width: 90%;
+    height: auto;
+}
+
+#inputTask{
+    height: 30px;
+    width: 190px;
+    
+    padding-left: 5px;
+    margin-right: 5px;
+    
+    border: solid 2px transparent;
+    border-radius: 5px;
+}
+
+#inputTask:focus{
+    border: solid 2px #1b8307;
+    background-color: #d8f3d3;
+}
+
+.errorTask{
+    border: solid 2px #830707 !important;
+    background-color: #c00c05 !important;
+    color: white;
+}
+
+.btnSubmit{
+    background-color: #34e211;
+    color: #5b6009;
+
+    border: transparent;
+    border-radius: 5px;
+
+    height: 30px;
+    width: 70px;
+
+    transition: .3s ease;
+}
+
+.btnSubmit:active{
+    background-color: #1b8307;
+    color: #fff;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.taskAdded{
+    width: 90%;
+    height: auto;
+
+    min-height: 35px;
+    margin:30px 0;
+
+    border: solid 2px transparent;
+    border-radius: 5px;
+    padding-left: 5px;
+
+    background-color: #fff;
+}
+
+.createdDiv{
+    width: 100%;
+    height: auto;
+    margin-left: -5px;
+    border: solid red 1px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.createdDiv p{
+    font-size: 14px;
+    padding-left: 5px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.createdDiv:hover{
+    background-color: #ecffe9;
+}
+
+.taskSelected{
+    text-decoration: line-through;
+}
+
+
+
+.fa-solid{
+    color: green;
+}
