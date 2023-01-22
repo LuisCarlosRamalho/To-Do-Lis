@@ -97,6 +97,7 @@ body{
 
     min-height: 35px;
     margin:30px 0;
+    padding: 10px;
 
     border: solid 2px transparent;
     border-radius: 5px;
@@ -109,7 +110,6 @@ body{
     width: 100%;
     height: auto;
     margin-left: -5px;
-    border: solid red 1px;
 
     display: flex;
     justify-content: space-between;
@@ -123,16 +123,15 @@ body{
     cursor: pointer;
 }
 
-.createdDiv:hover{
-    background-color: #ecffe9;
-}
 
 .taskSelected{
     text-decoration: line-through;
+    font-style: italic;
 }
 
 
 
 .fa-solid{
     color: green;
+    cursor: pointer;
 }
